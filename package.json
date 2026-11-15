@@ -1,0 +1,1 @@
+{"name":"takemyach","version":"1.0.0","private":true,"description":"ТакеМЯЧ — аркадная игра Таирбека","scripts":{"build":"echo Static game ready","android:sync":"npx cap sync android"},"dependencies":{"@capacitor/android":"^6.2.1","@capacitor/core":"^6.2.1"},"devDependencies":{"@capacitor/cli":"^6.2.1"}}
