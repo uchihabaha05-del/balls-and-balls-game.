@@ -26,11 +26,11 @@ footer{display:flex;justify-content:space-between;align-items:center;gap:8px;col
 <script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"}}</script>
 </head>
 <body><main id="app">
-<header><div><div class="brand">TRAP<span>TAG</span></div><div class="tagline">BUILD IT. TRAP IT. BEAT IT.</div></div><div class="top-actions"><button id="save">💾 Сохранить</button><button id="load">↶ Загрузить</button><button id="export">⇩ Экспорт</button></div></header>
+<header><div><div class="brand">TRAP<span>TAG</span></div><div class="tagline">BUILD IT. TRAP IT. BEAT IT.</div></div><div class="top-actions"><button id="save">💾 Сохранить</button><button id="load">↶ Загрузить</button><button id="export">⇩ Экспорт</button><button id="import">⇧ Импорт</button><input id="import-file" type="file" accept="application/json,.json" hidden></div></header>
 <nav id="toolbar">
 <div class="group"><button id="buildMode" class="active">▦ ПЛАТФОРМЫ</button><button id="trapMode">⚠ ЛОВУШКИ</button><button id="testMode" class="primary">▶ ТЕСТ</button></div><div class="sep"></div>
 <div class="group" id="palette"><button data-tool="platform" class="active">▰ Блок</button><button data-tool="spikes">▲ Шипы</button><button data-tool="saw">✹ Пила</button><button data-tool="laser">╱ Лазер</button><button data-tool="erase">⌫ Удалить</button></div><div class="sep"></div>
-<div class="group"><button id="rotate">⟳ Поворот</button><button id="clear">✕ Очистить</button></div>
+<div class="group"><button id="rotate">⟳ Поворот</button><button id="duplicate">▣ Копия</button><button id="raise">⬆ Выше</button><button id="lower">⬇ Ниже</button><button id="clear">✕ Очистить</button></div>
 </nav>
 <section id="viewport"><canvas id="game"></canvas><div id="hint">Построй трассу: нажми на сетку, чтобы добавить платформы. Перетаскивай камеру двумя пальцами.</div><div id="status">РЕДАКТОР · 0 ОБЪЕКТОВ</div><div id="toast"></div>
 <div id="play-controls"><div class="pad"><button class="up" data-key="forward">▲</button><button class="left" data-key="left">◀</button><button class="down" data-key="back">▼</button><button class="right" data-key="right">▶</button></div><button class="jump" data-key="jump">ПРЫЖОК</button></div>
