@@ -1,7 +1,7 @@
-name: Build Android APK
+name: Build TRAPTAG Android APK
 on:
   push:
-    branches: [main]
+    branches: [main, traptag-rebuild]
   workflow_dispatch:
 permissions:
   contents: read
@@ -20,7 +20,7 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Prepare web assets
-        run: mkdir -p www && cp index.html manifest.webmanifest icon.svg sw.js www/
+        run: mkdir -p www && cp index.html game.js manifest.webmanifest icon.svg sw.js www/
       - name: Add Android platform
         run: npx cap add android
       - name: Sync web game
@@ -31,6 +31,6 @@ jobs:
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: TakеMYACH-debug-apk
+          name: TRAPTAG-debug-apk
           path: android/app/build/outputs/apk/debug/app-debug.apk
           retention-days: 30
